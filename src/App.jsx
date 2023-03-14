@@ -11,13 +11,20 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/basicos/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/basicos/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
 const App = () => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
-      <Card titulo="#08 - Renderização Condicional" color="#452135">
+      <Card titulo="#09 - Renderização Condicional #02" color="#122548">
+        <UsuarioInfo usuario={{ nome: "Eric" }} />
+        <UsuarioInfo usuario={{}} />
+        <UsuarioInfo />
+      </Card>
+
+      <Card titulo="#08 - Renderização Condicional #01" color="#452135">
         <ParOuImpar numero={21} />
       </Card>
 
