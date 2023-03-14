@@ -8,12 +8,17 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/basicos/layout/Card";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaAlunos from "./components/basicos/repeticao/ListaAlunos";
 
 const App = () => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#06 - Lista de Alunos" color="#ff4c65">
+        <ListaAlunos />
+      </Card>
+
       <Card titulo="#05 - Componente com Filhos" color="#00c8f8">
         <Familia sobrenome="Silva">
           <FamiliaMembro nome="Pedro" />
