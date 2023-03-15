@@ -20,8 +20,8 @@ const App = () => (
     <div className="Cards">
       <Card titulo="#09 - Renderização Condicional #02" color="#122548">
         <UsuarioInfo usuario={{ nome: "Eric" }} />
-        <UsuarioInfo usuario={{}} />
-        <UsuarioInfo />
+        {/* <UsuarioInfo usuario={{}} />
+        <UsuarioInfo /> */}
       </Card>
 
       <Card titulo="#08 - Renderização Condicional #01" color="#452135">
