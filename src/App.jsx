@@ -13,12 +13,17 @@ import TabelaProdutos from "./components/basicos/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicação/DiretaPai";
+import IndiretaPai from "./components/comunicação/IndiretaPai";
 
 const App = () => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#11 - Comunicação Indireta" color="#1dd8f8">
+        <IndiretaPai />
+      </Card>
+
       <Card titulo="#10 - Comunicação Direta" color="#012500">
         <DiretaPai />
       </Card>
