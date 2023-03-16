@@ -1,8 +1,12 @@
 const IndiretaFilho = props => {
+  const min = 50;
+  const max = 70;
+  const gerarIdade = () => parseInt(Math.random() * (max - min)) + min;
+
   return (
     <div>
       <div>Filho</div>
-      <button onClick={_ => props.quandoClicar("João", 53, true)}>
+      <button onClick={_ => props.quandoClicar("João", gerarIdade, true)}>
         Fornecer Informações
       </button>
     </div>
