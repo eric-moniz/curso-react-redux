@@ -1,5 +1,8 @@
 import "./Contador.css";
 import React from "react";
+import Display from "./Display";
+import Botoes from "./Botoes";
+import PassoForm from "./PassoForm";
 
 class Contador extends React.Component {
   // 1. modo de setar a variavel numero com props passada
@@ -29,9 +32,9 @@ class Contador extends React.Component {
     });
   };
 
-  setPasso = evento => {
+  setPasso = novoPasso => {
     this.setState({
-      passo: +evento.target.value,
+      passo: novoPasso,
     });
   };
 
@@ -39,10 +42,9 @@ class Contador extends React.Component {
     return (
       <div className="Contador">
         <h2>Contador</h2>
-        <h3>
-          <strong>{this.state.numero}</strong>
-        </h3>
-        <div>
+        <Display numero={this.state.numero} />
+        <PassoForm passo={this.state.passo} setPasso={this.setPasso} />
+        {/* <div>
           <label htmlFor="passoInput">Passo: </label>
           <input
             id="passoInput"
@@ -50,9 +52,8 @@ class Contador extends React.Component {
             value={this.state.passo}
             onChange={this.setPasso}
           />
-        </div>
-        <button onClick={this.inc}>+</button>
-        <button onClick={this.dec}>-</button>
+        </div> */}
+        <Botoes setInc={this.inc} setDec={this.dec} />
       </div>
     );
   }
